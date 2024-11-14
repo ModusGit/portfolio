@@ -5,223 +5,35 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-
-    <!-- css globals -->
-    <link rel="stylesheet" href="public/css/bootstrap.min.css">
-    <!-- animate css -->
-    <link rel="stylesheet" type="text/css" href="public/css/animate.min.css">
+ 	<!-- CSS -->
+		<!-- bootstrap css -->
+		<link rel="stylesheet" href="public/css/bootstrap.min.css">
+		<!-- css globals -->
+		<link rel="stylesheet" href="public/css/style.css">
+		<!-- animate css -->
+		<link rel="stylesheet" type="text/css" href="public/css/animate.min.css">
 
     <!-- javascripts -->
-    <!-- typed js -->
-    <script src="public/js/typed.js"></script>
+		<!-- typed js -->
+		<script src="public/js/typed.js"></script>
+		<!-- WOW js -->
+		<script type="text/javascript" src="public/js/wow.js"></script>
 
-    <!-- font awesome -->
-    <script defer src="public/js/all.js"></script>
-
-    <!-- WOW js -->
-    <script type="text/javascript" src="public/js/wow.js"></script>
-
+	 <!-- font awesome -->
+	 	<script src="https://kit.fontawesome.com/c4770d3c83.js" crossorigin="anonymous"></script>
 
     <title>Maud Gauthier 👩🏻‍💻</title>
-    <style type="text/css">
-    	html {
-    	  scroll-behavior: smooth;
-    	}
-    	body {
-    		color: white;
-    	}
-    	ul {
-    		line-height: 2;
-    	}
-    	li {
-    		display: inline-block;
-    		margin: 40px 20px;
-    		color: white;
-    		font-weight: 600;
-    	}
-    	li a {
-    		color: white;
-    	}
-    	li a:hover {
-    		opacity: 0.5;
-    		color: white;
-    		text-decoration: none;
-    	}
-    	.wrapper-logo {
-    		display: inline-block;
-    		margin: 25px 0px;
-    		width: 70px;
-    		height: 70px;
-    		text-align: center;
-    		padding: 4px;
-    		border-radius: 50%;
-    		position: relative;
-    	}
-    	.logo {
-    		display: inline-block;
-    		width: 70px;
-    		height: 70px; 
-    		vertical-align: middle;
-    		position: absolute;
-    		left: 0;
-    		right: 0;
-    		margin: auto;
-    		top: 0;
-    		bottom: 0;
-    	}
-    	.black {
-    		position: absolute;
-    		left: 0;
-    		right: 0;
-    		top: 0;
-    		bottom: 0;
-    		background-color: rgba(0,0,0,0.7);
-    		z-index: 0;
-    		transition: all 0.3s;
-    	}
-    	.fixed .black {
-    		bottom: 135px!important;
-    		transition: all 0.3s;
-    	}
-    	i {
-    		text-align: center;
-    	}
-    	i:hover {
-    		opacity: 0.5!important;
-    	}
-    	.square {
-			width: 450px;
-    		height: 540px;
-    		border-radius: 5px;
-    		position: absolute;
-    		left: -40px;
-    		top: 130px;
-    		z-index: 0;
-    		background: #767676;
-    		background: url("public/images/profile-bg.png");
-    	}
-    	input ,textarea{
-    		background: transparent none repeat scroll 0 0 !important;
-		    border: 1px solid #606060 !important;
-		    color: #aaaaaa !important;
-    	}
-    	.title-logo {
-    		font-size: 22px;
-    		position: absolute;
-    		left: 95px;
-    		top: 21px;
-    		bottom: 0;
-    		margin: auto;
-    		right: 0;
-    		line-height: 3;
-    		transition: all 0.4s;
-    	}
-    	/* fixed header */
-    	.fixed {
-		    position: fixed;
-		    top:0;
-		    left:0;
-		    right:0;
-		    background-color: black;
-		    z-index: 2;
-		    height: 90px!important;
-		    transition: all 0.7s;
-		  }
-		  .header {
-		  	transition: all 0.7s;
-		  	height: 120px;
-		  }
-		  .fixed ul {
-		  	line-height: 0.8!important;
-		  	transition: all 1s;
-		  }
-		  .fixed .wrapper-logo {
-		  	transform: scale(0);
-		  	transition: all 0.5s;
-		  }
-		  .wrapper-logo {
-		  	transform: scale(1);
-		  	transition: all 0.5s;
-		  }
-		  .fixed .title-logo {
-		  	top: 11px!important;
-		  	left: 40px!important;
-		  	transition: all 0.6s;
-		  }
-		  .services-icon, .contact-icon {
-		  	font-size: 50px !important;cursor: pointer;
-		  }
-		  /* new css */
-		  .all {
-		  	background-color: #2a2a2a;
-		  	background-image: url('public/images/blacked.png');
-		  	background-repeat: no-repeat;
-		  	background-size: cover;
-		  }
-		  .title {
-		  	font-weight: 700;
-		    letter-spacing: 2px;
-		    margin-bottom: 14px;
-		    text-align: center;
-		    margin-top: 10%;
-		  }
-		  .scd-title {
-		  	font-size: 72px;
-		  	margin-bottom: 22px;
-		  	text-align: center;
-		  }
-		  .separator {
-		  	font-size:10px;
-		    display: inline-block;
-		    margin: 0px 10px;
-		  }
-		  .social-link, .social-icon {
-		  	color: white;
-			text-decoration: none;
-			font-size: 28px !important;
-		  	margin-right: 25px;
-		  	cursor: pointer;
-		  }
-		  .social-link, .social-icon:hover {
-    		color: #ccc;
-		  }
-		  .img-profil-460 {
-		  	z-index: 1;
-		  	position: relative;
-		  	top: 20px;
-		  	border-radius: 5px;
-			width: 450px;
-    		height: 540px;
-		  }
-		  .titre {
-		  	position: relative;
-		  	margin-bottom: 45px;
-		  	font-weight: bold;		  	
-		  }
-		  .description-profil {
-		  	position: relative;
-		  	font-size: 14px;
-		  	font-weight: normal;
-		  	line-height: 24px;
-		  	color: #aaaaaa;
-		  	margin-bottom: 50px;
-		  }
-		  .hireMe {
-		  	position: relative;
-		  	margin-right: 25px;
-		  	padding:10px 25px;
-		  }
-    </style>
   </head>
   <body>
     <div class="container-fluid all"> 
    		<div class="container-fluid header">
-      		<!-- <div class="black"></div> -->
    			<div class="container">
 	   			<div class="row">
 	   				<div class="col-lg-5">
 	   					<div class="wrapper-logo" >
-	   						<img class="logo" src="public/images/logo_Maud_Gauthier.png" alt="photo portrait Maud Gauthier">
+	   						<a href="#about">
+								<img class="logo" src="public/images/logo_Maud_Gauthier.png" alt="photo portrait Maud Gauthier">
+							</a>
 	   					</div>
 	   					<span class="title-logo">Maud <b>Gauthier</b></span>
 	   				</div>
@@ -263,7 +75,7 @@
 	      		<h3 class="title">Hello,</h3>
 	      		<h5 class="scd-title">Je suis <span class="element"></span></h5>
 	      		<h6 style="text-align: center;color: #aaaaaa;">
-	      			Développeur Web 
+	      			Développeuse Web 
 	      			<span class='separator'>&#9670;</span> Full Stack 
 	      			<span class='separator'>&#9670;</span> En recherche d'alternance...
 	      		</h6>
@@ -399,7 +211,6 @@
     <!-- My skills -->
     <!-- My skills -->
     <!-- My skills -->
-
     <div class="container-fluid" style="background-color: black" id="service">
     	<div class="container" style="padding-bottom: 150px;">
 	      <div class="row" style="text-align: center;">
@@ -548,6 +359,21 @@
         	</div>
         </div>
 
+	<!-- Back to Top -->
+    <a href="#" class="back-to-top">
+		<i class="fa-solid fa-arrow-up"></i>
+	</a>
+	<script>
+		window.onscroll = function() {
+			const button = document.querySelector('.back-to-top');
+			if (document.documentElement.scrollTop > 200) { // S'affiche après 200px de défilement
+				button.style.display = "block";
+			} else {
+				button.style.display = "none";
+			}
+		};
+		</script>
+
     <!-- footer requirement. -->
     <script src="public/js/jquery-3.3.1.slim.min.js"></script>
     <script src="public/js/popper.min.js"></script>
@@ -556,7 +382,7 @@
     
      <script type="text/javascript">
      	var typed = new Typed('.element', {
-			  strings: [" développeur Web.", " en reconversion.", " en recherche d'alternance."],
+			  strings: [" développeuse Web.", " en reconversion.", " en recherche d'alternance."],
 			  typeSpeed: 70,
 			  smartBackspace: true,
 			  loop: true
