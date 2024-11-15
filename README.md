@@ -2,7 +2,7 @@
 
 Création de mon portfolio.<br>
 <br>
-![Mon image](public/images/for_git)<br>
+![Mon image](public/images/for_git.png)<br>
 <br>
 HTML - CSS - Javascript <br>
 <br>
