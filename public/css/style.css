@@ -68,8 +68,8 @@ html {
       height: 540px;
       border-radius: 5px;
       position: absolute;
-      left: -40px;
-      top: 130px;
+      left: -30px;
+      top: 40px;
       z-index: 0;
       background: #767676;
       background: url("/public/images/profile-bg.png");
@@ -169,6 +169,7 @@ html {
         border-radius: 5px;
         width: 450px;
         height: 540px;
+
     }
     .titre {
         position: relative;
