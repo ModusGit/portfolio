@@ -72,7 +72,7 @@ html {
       top: 40px;
       z-index: 0;
       background: #767676;
-      background: url("/public/images/profile-bg.png");
+      background: url("/assets/images/profile-bg.png");
   }
   input ,textarea{
       background: transparent none repeat scroll 0 0 !important;
@@ -128,7 +128,8 @@ html {
     /* new css */
     .all {
         background-color: #2a2a2a;
-        background-image: url('/public/images/blacked.png');
+        background-image: url('/assets/images/blacked.png');
+        background-attachment: fixed;
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
