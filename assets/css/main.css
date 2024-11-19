@@ -207,3 +207,8 @@ html {
         background-color: #555;
         color: white;
     }
+    .image-uniforme {
+        width: 350px; /* Largeur fixe */
+        height: 220px; /* Hauteur fixe */
+        /* object-fit: cover; Ajuste l'image sans déformer */
+    }
