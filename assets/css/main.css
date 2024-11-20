@@ -196,16 +196,15 @@ html {
         right: 20px;
         padding: 10px 15px;
         font-size: 24px;
-        background-color: white;
-        color: grey;
+        background-color: #f8f9fa;
+        color: #555;
         border-radius: 5px;
         text-decoration: none;
-        display: none;
-      
+        display: none; 
     }
     .back-to-top:hover {
         background-color: #555;
-        color: white;
+        color: #f8f9fa;
     }
     .image-uniforme {
         width: 350px;
@@ -233,14 +232,39 @@ html {
         left: 50%;
         transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        background-color: black;
-        color: #dae0e5;
+        background-color: transparent;
+        border: 1px solid #f8f9fa;
+        border-radius: 0.25rem;
+        color: #f8f9fa;
+        line-height: 1.5;
         text-align: center;
         font-size: 16px;
-        padding: 12px 24px;
-        border: none;
+        padding: 10px 25px;
         cursor: pointer;
         border-radius: 5px;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     }
+    .btn-middle-image-uniforme:hover {
+        color: #212529;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+    .btn-middle-image-uniforme:focus {
+        box-shadow: 0 0 0 0.2rem rgba(248, 249, 250, 0.5);
+        outline: none;
+    }
+    .btn-middle-image-uniforme:disabled {
+        color: #f8f9fa;
+        background-color: transparent;
+        border-color: #f8f9fa;
+        cursor: not-allowed;
+    }
+    .btn-middle-image-uniforme.active, 
+    .btn-middle-image-uniforme:active {
+        color: #212529;
+        background-color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+    
  
   
