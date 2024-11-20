@@ -208,16 +208,17 @@
 	      	<div class="col-lg-12" style="text-align: center;">
 	      		<div class="row" >
 	      			<ul style="width: 100%;font-weight: 100;">
-	      				<li><a href="#projects">TOUS</a></li>
-	      				<li><a href="#projects">MES PROJETS COLLABORATIFS</a></li>
-	      				<li><a href="#projects">MES PROJETS PERSONNELS</a></li>
+	      				<li><a href="#projects" class="filter" data-filter="all">TOUS</a></li>
+	      				<li><a href="#projects" class="filter" data-filter="collaborative">MES PROJETS COLLABORATIFS</a></li>
+	      				<li><a href="#projects" class="filter" data-filter="personal">MES PROJETS PERSONNELS</a></li>
 	      			</ul>
 	      		</div>	
 	      	</div>
 
 	      	<div class="col-lg-12" style="text-align: center;">
-	      		<div class="row" >
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+	      		<div class="row project-grid" >
+					<!-- Projets collaboratifs -->
+	      			<div class="col-lg-4 project collaborative" style="padding:5px;margin-bottom: 15px;">
 	      				<img src="assets/images/appli-mobile-spiderSurf.png" 
 							class="image-uniforme"
 							style="width:350px;object-position: center;object-fit: cover;"
@@ -226,7 +227,7 @@
 								<button class="btn-middle-image-uniforme">Spider Surf</button>
 							</div>
 	      			</div>
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+	      			<div class="col-lg-4 project collaborative" style="padding:5px;margin-bottom: 15px;">
 	      				<img src="assets/images/site-e-commerce-meubl&co.png"
 						  	class="image-uniforme" 
 							style="width:350px;object-position: center;object-fit: cover;"
@@ -235,7 +236,7 @@
 								<button class="btn-middle-image-uniforme">Meubl&co</button>
 							</div>
 	      			</div>
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+	      			<div class="col-lg-4 project collaborative" style="padding:5px;margin-bottom: 15px;">
 	      				<img src="assets/images/reseau-social-popScreen.png" 
 						style="width:350px;object-position: center;object-fit: cover;"
 						class="image-uniforme"
@@ -244,7 +245,7 @@
 							<button class="btn-middle-image-uniforme">Pop Screen</button>
 						</div>
 	      			</div>
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+	      			<div class="col-lg-4 project collaborative" style="padding:5px;margin-bottom: 15px;">
 						<img src="assets/images/extension-navigateur-antiFixette.png" 
 					  style="width:350px;object-position: center;object-fit: cover;"
 					  class="image-uniforme"
@@ -253,7 +254,7 @@
 						  <button class="btn-middle-image-uniforme">Anti-Fixette</button>
 						</div>
 					</div>
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+					<div class="col-lg-4 project collaborative" style="padding:5px;margin-bottom: 15px;">
 						<img src="assets/images/dataviz-LastFM.png" 
 					  style="width:350px;object-position: center;object-fit: cover;"
 					  class="image-uniforme"
@@ -262,7 +263,8 @@
 						  <button class="btn-middle-image-uniforme">Dataviz LastFM</button>
 						</div>
 					</div>
-	      			<div class="col-lg-4" style="padding:5px;margin-bottom: 15px;">
+					<!-- Projets personnels -->
+					<div class="col-lg-4 project personal" style="padding:5px; margin-bottom: 15px;">
 						<img src="assets/images/for_git.png" 
 					  style="width:350px;object-position: center;object-fit: cover;"
 					  class="image-uniforme"

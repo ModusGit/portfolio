@@ -50,6 +50,37 @@ $(window).scroll(function () {
     });
 });
 
+// Sélectionnez tous les liens de filtre
+const filters = document.querySelectorAll('.filter');
+
+// Sélectionnez tous les projets
+const projects = document.querySelectorAll('.project');
+
+// Ajoutez un événement de clic à chaque lien de filtre
+filters.forEach(filter => {
+    filter.addEventListener('click', event => {
+        event.preventDefault(); // Empêche le comportement par défaut de l'ancre
+
+        // Récupérez le filtre sélectionné
+        const filterType = filter.getAttribute('data-filter');
+
+        // Montrez ou cachez les projets
+        projects.forEach(project => {
+            if (filterType === 'all') {
+                // Montrez tous les projets
+                project.style.display = 'block';
+            } else if (project.classList.contains(filterType)) {
+                // Montrez les projets correspondant au filtre
+                project.style.display = 'block';
+            } else {
+                // Cachez les autres projets
+                project.style.display = 'none';
+            }
+        });
+    });
+});
+
+
 
 
 
