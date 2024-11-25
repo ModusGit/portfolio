@@ -82,7 +82,7 @@ html {
   .title-logo {
       font-size: 22px;
       position: absolute;
-      left: 95px;
+      left: 100px;
       top: 21px;
       bottom: 0;
       margin: auto;
@@ -272,6 +272,33 @@ html {
     .project[style*="display: none"] {
         opacity: 0;
         transform: scale(0.95);
+    }
+    .logos-container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 70px);
+        justify-content: center;
+        gap: 40px;
+        width: 100%;
+        clear: both;
+        position: relative;
+        z-index: 1;
+    }
+    .logos-container img {
+        width: 70px;
+        height: 70px;
+        display: block;
+        object-fit: contain;
+        transition: transform 0.3s ease;
+        position: relative;
+    }
+    .logos-container img:hover {
+        transform: scale(1.1);
+        z-index: 2;
+    }
+    .list-unstyled {
+        padding: 0;
+        margin: 20px 0;
     }
     
  

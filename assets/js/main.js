@@ -50,6 +50,79 @@ $(window).scroll(function () {
     });
 });
 
+
+//SECTION SKILLS
+document.addEventListener('DOMContentLoaded', () => {
+    const logosContainer = document.getElementById('logos-container');
+    if (!logosContainer) {
+        console.error("Erreur : L'élément avec l'ID 'logos-container' est introuvable.");
+        return;
+    }
+  
+    const data = {
+      stack: [
+        { src: 'assets/images/icons/html5.svg', alt: 'html 5' },
+        { src: 'assets/images/icons/css3.svg', alt: 'css' },
+        { src: 'assets/images/icons/javascript.svg', alt: 'javascript' },
+        { src: 'assets/images/icons/php.svg', alt: 'php' },
+        { src: 'assets/images/icons/symfony.svg', alt: 'symfony' },
+        { src: 'assets/images/icons/laravel.svg', alt: 'laravel' },
+        { src: 'assets/images/icons/react.svg', alt: 'react' },
+        { src: 'assets/images/icons/mysql.svg', alt: 'my sql' },
+        { src: 'assets/images/icons/go.svg', alt: 'golang' },
+        { src: 'assets/images/icons/swift.svg', alt: 'swift' },
+        { src: 'assets/images/icons/tailwindcss.svg', alt: 'tailwind' }
+      ],
+      tools: [
+        { src: 'assets/images/icons/vscode.svg', alt: 'vs code' },
+        { src: 'assets/images/icons/phpstorm.svg', alt: 'php storm' },
+        { src: 'assets/images/icons/xcode.svg', alt: 'x code' },
+        { src: 'assets/images/icons/jest.svg', alt: 'jest' },
+        { src: 'assets/images/icons/postman.svg', alt: 'postman' },
+        { src: 'assets/images/icons/supabase.svg', alt: 'supabase' },
+        { src: 'assets/images/icons/git.svg', alt: 'git' },
+        { src: 'assets/images/icons/github.svg', alt: 'github' },
+        { src: 'assets/images/icons/docker.svg', alt: 'docker' },
+        { src: 'assets/images/icons/figma.svg', alt: 'figma' },
+        { src: 'assets/images/icons/trello.svg', alt: 'trello' },
+        { src: 'assets/images/icons/notion.svg', alt: 'notion' },
+        { src: 'assets/images/icons/slack.svg', alt: 'slack' }
+      ],
+      skills: [
+        { src: 'assets/images/icons/vscode.svg', alt: 'Travail en équipe' },
+        { src: 'assets/images/icons/vscode.svg', alt: 'Adaptabilité/Polyvalence' },
+        { src: 'assets/images/icons/vscode.svg', alt: 'Curiosité intellectuelle' },
+        { src: 'assets/images/icons/javascript.svg', alt: 'Sociabilité' },
+        { src: 'assets/images/icons/javascript.svg', alt: 'Positivité' }
+      ]
+    };
+  
+    document.getElementById('stack').addEventListener('click', () => {
+      renderLogos(data.stack);
+    });
+  
+    document.getElementById('tools').addEventListener('click', () => {
+      renderLogos(data.tools);
+    });
+  
+    document.getElementById('soft-skills').addEventListener('click', () => {
+      renderLogos(data.skills);
+    });
+  
+    function renderLogos(logos) {
+      logosContainer.innerHTML = '';
+      logos.forEach(logo => {
+        const img = document.createElement('img');
+        img.src = logo.src;
+        img.alt = logo.alt;
+        img.className = 'logo';
+        logosContainer.appendChild(img);
+      });
+    }
+  });
+  
+
+//SECTION PROJECTS
 // Sélectionnez tous les liens de filtre
 const filters = document.querySelectorAll('.filter');
 
@@ -79,6 +152,7 @@ filters.forEach(filter => {
         });
     });
 });
+  
 
 
 
