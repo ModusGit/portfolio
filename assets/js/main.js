@@ -71,7 +71,6 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: 'assets/images/icons/mysql.svg', alt: 'my sql' },
         { src: 'assets/images/icons/go.svg', alt: 'golang' },
         { src: 'assets/images/icons/swift.svg', alt: 'swift' },
-        { src: 'assets/images/icons/tailwindcss.svg', alt: 'tailwind' }
       ],
       tools: [
         { src: 'assets/images/icons/vscode.svg', alt: 'vs code' },
@@ -89,11 +88,11 @@ document.addEventListener('DOMContentLoaded', () => {
         { src: 'assets/images/icons/slack.svg', alt: 'slack' }
       ],
       skills: [
-        { src: 'assets/images/icons/vscode.svg', alt: 'Travail en équipe' },
-        { src: 'assets/images/icons/vscode.svg', alt: 'Adaptabilité/Polyvalence' },
-        { src: 'assets/images/icons/vscode.svg', alt: 'Curiosité intellectuelle' },
-        { src: 'assets/images/icons/javascript.svg', alt: 'Sociabilité' },
-        { src: 'assets/images/icons/javascript.svg', alt: 'Positivité' }
+        { src: 'assets/images/icons/team-work.svg', alt: 'Travail en équipe' },
+        { src: 'assets/images/icons/gears.svg', alt: 'Adaptabilité/Polyvalence' },
+        { src: 'assets/images/icons/eye.svg', alt: 'Curiosité intellectuelle' },
+        { src: 'assets/images/icons/comments.svg', alt: 'Sociabilité' },
+        { src: 'assets/images/icons/face-smile.svg', alt: 'Positivité' }
       ]
     };
   
