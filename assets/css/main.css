@@ -276,7 +276,7 @@ html {
     .logos-container {
         margin-top: 30px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, 70px);
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         justify-content: center;
         gap: 40px;
         width: 100%;
@@ -284,20 +284,27 @@ html {
         position: relative;
         z-index: 1;
     }
+    .logo-item {
+        flex-direction: column; 
+        text-align: center;
+    }
     .logos-container img {
-        width: 70px;
-        height: 70px;
-        display: block;
+        width: 80px;
+        height: 80px;
         object-fit: contain;
         transition: transform 0.3s ease;
         position: relative;
     }
     .logos-container img:hover {
-        transform: scale(1.1);
-        z-index: 2;
+        transform: scale(1.3);
+    }
+    .logos-container div {
+        color: white;
+        margin-top: 15px;
+        font-size: 1.1em;
     }
     .list-unstyled {
-        padding: 0;
+        padding: 30px;
         margin: 20px 0;
     }
     
