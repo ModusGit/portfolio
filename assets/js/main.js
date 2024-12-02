@@ -146,6 +146,9 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 //SECTION PROJECTS
+
+//Project filter
+
 //Select all filter links
 const filters = document.querySelectorAll('.filter');
 
@@ -176,26 +179,28 @@ filters.forEach(filter => {
     });
 });
 
-// Sélectionner tous les boutons et leurs modals associés
-var buttons = document.querySelectorAll(".btn-middle-image-uniforme");
-var modals = document.querySelectorAll(".modal");
-var closeButtons = document.querySelectorAll(".close");
+//Project modal
 
-// Ajouter des événements pour ouvrir chaque modal
+//Select all buttons and their associated modals
+let buttons = document.querySelectorAll(".btn-middle-image-uniforme");
+let modals = document.querySelectorAll(".modal");
+let closeButtons = document.querySelectorAll(".close");
+
+//Add events to open each modal
 buttons.forEach((button, index) => {
     button.addEventListener("click", function() {
         modals[index].style.display = "block";
     });
 });
 
-// Ajouter des événements pour fermer chaque modal
+//Add events to close each modal
 closeButtons.forEach((close, index) => {
     close.addEventListener("click", function() {
         modals[index].style.display = "none";
     });
 });
 
-// Fermer le modal si on clique en dehors
+//Close the modal if clicked outside
 window.addEventListener("click", function(event) {
     modals.forEach((modal) => {
         if (event.target === modal) {
