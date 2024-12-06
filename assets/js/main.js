@@ -210,6 +210,34 @@ window.addEventListener("click", function(event) {
 });
 
 
+//Display image in large format
+
+//Retrieving items
+const images = document.querySelectorAll('.modal-image');
+const imageViewer = document.getElementById('imageViewer');
+const viewerImage = document.getElementById('viewerImage');
+const closeViewer = document.querySelector('.close-viewer');
+
+//Function to display the image in large format
+images.forEach(image => {
+    image.addEventListener('click', () => {
+        viewerImage.src = image.src;
+        imageViewer.style.display = 'flex';
+    });
+});
+
+//Function to close the display
+closeViewer.addEventListener('click', () => {
+    imageViewer.style.display = 'none';
+});
+
+//Close by clicking outside the image
+imageViewer.addEventListener('click', (event) => {
+    if (event.target === imageViewer) {
+        imageViewer.style.display = 'none';
+    }
+});
+
 
 
 
